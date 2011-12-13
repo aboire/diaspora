@@ -1,0 +1,121 @@
+
+%link{:href => "/slideshow/css/supersized.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+%link{:href => "/slideshow/theme/supersized.shutter.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+%script{:src => "/slideshow/js/jquery.easing.min.js", :type => "text/javascript"}
+%script{:src => "/slideshow/js/supersized.3.2.5.min.js", :type => "text/javascript"}
+%script{:src => "/slideshow/theme/supersized.shutter.min.js", :type => "text/javascript"}
+:javascript
+  jQuery(function($){
+  $.supersized({
+  // Functionality
+  slide_interval : 3000,		// Length between transitions
+  transition : 1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+  transition_speed		:	700,		// Speed of transition
+  // Components
+  slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+  slides 					: 	[			// Slideshow Images
+  {image : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/Dandelion.1920x1200.jpg', title : 'La Reunion', thumb : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/Dandelion.1920x1200.jpg', url : 'https://diaspora.re/users/sign_in'},
+  {image : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/IMGP0450.jpg', title : 'La Reunion', thumb : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/Dandelion.1920x1200.jpg', url : 'https://diaspora.re/users/sign_in'},
+  {image : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/IMGP2242.jpg', title : 'La Reunion', thumb : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/Dandelion.1920x1200.jpg', url : 'https://diaspora.re/users/sign_in'},
+  {image : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/IMGP2313.jpg', title : 'La Reunion', thumb : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/Dandelion.1920x1200.jpg', url : 'https://diaspora.re/users/sign_in'},
+  {image : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/IMGP2346.jpg', title : 'La Reunion', thumb : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/Dandelion.1920x1200.jpg', url : 'https://diaspora.re/users/sign_in'},
+  {image : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/IMGP2434.jpg', title : 'La Reunion', thumb : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/Dandelion.1920x1200.jpg', url : 'https://diaspora.re/users/sign_in'},
+  {image : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/IMGP2437.jpg', title : 'La Reunion', thumb : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/Dandelion.1920x1200.jpg', url : 'https://diaspora.re/users/sign_in'},
+  {image : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/IMGP2496.jpg', title : 'La Reunion', thumb : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/Dandelion.1920x1200.jpg', url : 'https://diaspora.re/users/sign_in'},
+  {image : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/IMGP2665.jpg', title : 'La Reunion', thumb : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/Dandelion.1920x1200.jpg', url : 'https://diaspora.re/users/sign_in'},
+  {image : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/IMGP2718.jpg', title : 'La Reunion', thumb : 'https://s3-eu-west-1.amazonaws.com/s3.diaspora.re/home/Dandelion.1920x1200.jpg', url : 'https://diaspora.re/users/sign_in'}
+  ]
+  });
+  });
+        
+#landing_content
+  .splash
+    .memory
+      %h1 Diaspora* Réunion
+      %h2 Je fleurirai partout où je serai portée
+:css
+    body{
+      background-color:#0A0000;
+      padding : 0;
+    }
+    .container {
+      width : 100%;
+    }
+    .container span {
+      font-weight: lighter;
+      letter-spacing: 0.05em;
+      color: #999; 
+      text-shadow: 0px 2px 3px #2a2a2a;
+    }
+    .span-24.last {
+      width : 100%;
+    }
+    #landing_content{
+      margin-top:-6px;
+      }
+    #landing_content  img {
+      width : 100%;
+    }
+    .splash {
+      opacity: 0.7;
+      -moz-opacity: 0.7;
+      filter: alpha (opacity = 70);
+      position : relative;
+    }
+
+    .memory {
+      position: absolute;
+      top: 90px;
+      right : 90px;
+      text-align : right;
+      -moz-border-radius: 5px 5px 5px 5px;
+      -webkit-border-radius: 5px 5px 5px 5px;
+      border-radius: 5px 5px 5px 5px;
+      -webkit-box-shadow: 0 1px 1px #666;
+      -moz-box-shadow: 0 1px 1px #666;
+      box-shadow: 0 1px 1px #666;
+      padding: 5px 8px;
+      background-color: black;
+      border-top: 1px solid black;
+    }
+
+    #landing_content h1 {
+      font-weight: 200;
+      font-size: 38px;
+      letter-spacing: 0.03em;
+      color: #999; 
+      text-shadow: 0px 3px 8px #2a2a2a;
+    }
+
+    #landing_content h2 {
+      font-weight: lighter;
+      font-size: 25px;
+      letter-spacing: 0.05em;
+      color: #3F8FBA; 
+
+    }
+
+    footer {
+     position : absolute;
+     bottom:0px;
+     left:0px;
+     
+    }
+    
+    footer .container {
+    background-color:#231e1e;
+    }
+    footer .container img{
+        margin-left:5px;
+    }    
+
+    .attribution {
+      position : absolute;
+      bottom : 8px;
+      left : 8px;
+      color : #777;
+    }
+    .attribution:hover {
+      text-decoration : none;
+      color : #666;
+    }
