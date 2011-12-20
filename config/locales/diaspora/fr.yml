@@ -204,6 +204,11 @@ fr:
     spotlight: 
       community_spotlight: "Actualités de la communauté"
     zero: contact
+    one: "1 contact"
+    two: "%{count} contacts"
+    few: "%{count} contacts"
+    many: "%{count} contacts"
+    other: "%{count} contacts"
   conversations: 
     create: 
       fail: "Message invalide"
